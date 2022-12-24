@@ -315,9 +315,7 @@ body {
     animation-duration: 4s;
 }
 
-@media only screen and (max-height : 660px){
 
-}
 
 @media only screen and (max-width : 1150px){
     #ruleBanner{
@@ -418,10 +416,12 @@ body {
 		position: absolute;
 		height: 20px;
 		width: 80px;
-		top: 550px;
+		top: 650px;
+        /* bottom: 100px; */
 		left: 0;
 		right: 0;
 		margin: 0 auto;
+        margin-bottom: 50px;
 		padding: 12px 25px;
 		border: 2px solid white;
 		border-radius: 10px;
