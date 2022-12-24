@@ -1,0 +1,486 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-image: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    box-sizing: border-box;
+}
+
+#title-board {
+    height: 100px;
+    /* height: 13vh; */
+    width: 640px;
+    /* width: 38vw; */
+    border: solid hsl(217, 16%, 45%) 4px;
+    margin: 50px auto;
+    margin-top: 60px;
+    /* margin: 8vh auto; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    /* padding: 3vh; */
+    border-radius: 2vh;
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+#logoImg {
+    height: 110px;
+    /* height: 12vh; */
+    animation-name: houseAppear;
+    animation-duration: 4s;
+}
+
+#scoreCard {
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    /* padding: 15px 18px; */
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 15px;
+    /* letter-spacing: 2px; */
+    font-weight: 600;
+    color: hsl(229, 64%, 46%);
+    width: 90px;
+    /* height: 110px; */
+    background-color: white;
+    border-radius: 1vh;
+    animation-name: houseAppear;
+    animation-duration: 4s;
+}
+
+#scoreText {
+    /* padding-top: 1vh; */
+    letter-spacing: 1.5px;
+    
+}
+
+#score {
+    font-size: 7vh;
+    /* font-size: 3.5vw; */
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+    /* margin-top: 1vh; */
+    /* animation-name: houseAppear;
+    animation-duration: 2s; */
+}
+
+/* #selectText{
+    font-family: 'Barlow Semi Condensed';
+    position: relative;
+    top: -4vh;
+    text-align: center;
+    font-size: 4vh;
+} */
+
+/* #main-game{
+    margin: 40px auto;
+	margin-bottom: 0;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+} */
+
+#option-holder {
+    margin: 0px auto;
+    margin-top: 60px;
+    position: relative;
+    /* min-height: 390px;
+    max-height: 390px;
+    min-width: 450px;
+    max-width: 450px; */
+    width: 450px;
+    height: 390px;
+    color: white;
+    text-align: center;
+    /* border: solid white 2px; */
+    background: url('./Components/Images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: houseAppear;
+    animation-duration: 4s;
+}
+
+#paper-holder {
+    border: 24px solid hsl(230, 89%, 62%);
+}
+
+#scissor-holder {
+    border: 24px solid hsl(39, 89%, 49%);
+}
+
+#rock-holder {
+    border: 24px solid hsl(349, 71%, 52%);
+}
+
+.optionImage{
+    height: 69px;
+}
+
+.rock-option {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.paper-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-left: 10%; */
+}
+
+.scissor-option {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* margin-right: 10%; */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(12, 11, 11, 0.8);
+    /* background-image: radial-gradient(circle, rgb(255, 255, 255), hsl(235, 5%, 53%)); */
+}
+
+#result {
+    margin: 0 auto;
+    /* border: solid white 2px; */
+    padding: 0 1.5vw;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    /* max-width: 50vw; */
+    max-width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.choice-container {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected {
+    height: 175px;
+    /* height: 25vh;
+    width: 25vh; */
+    width: 175px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.selectedImage {
+    height: 85px;
+}
+
+.picked {
+    /* font-size: 1.4vw; */
+    font-size: 25px;
+    letter-spacing: 0.3vh;
+    text-align: center;
+    padding-bottom: 2vh;
+    font-weight: 550;
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+@keyframes houseAppear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.houseHolder{
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+.message-container{
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+#textMessage {
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+#playAgain {
+    margin: 1.5vh;
+    background-color: white;
+    color: hsl(229, 25%, 31%);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    animation-name: houseAppear;
+    animation-duration: 2s;
+}
+
+.red{
+    color: hsl(349, 71%, 52%) !important;
+}
+
+.green{
+    color : green !important;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    /* border: solid white 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: auto; */
+    animation-name: houseAppear;
+    animation-duration: 1s;
+}
+
+.modalContent {
+	border-radius: 1.5vh;
+	font-size: 25px;
+	font-weight: 600;
+	padding: 30px 45px;
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ruleHead {
+	color: hsl(229, 25%, 31%);
+	margin: 5px 0;
+	margin-bottom: 5vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    cursor: pointer;
+}
+
+#ruleBanner{
+    position:absolute;
+    bottom: 35px;
+    right: 40px;
+    /* right: 0;
+    left : 0;
+    margin : 0 auto; */
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 15px 35px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor:pointer;
+    animation-name: houseAppear;
+    animation-duration: 4s;
+}
+
+@media only screen and (max-height : 660px){
+
+}
+
+@media only screen and (max-width : 1150px){
+    #ruleBanner{
+        text-align: center;
+		position: absolute;
+		height: 20px;
+		width: 80px;
+		top: 720px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 12px 25px;
+		border: 2px solid white;
+		border-radius: 10px;
+		cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:880px){
+    #title-board{
+        max-width: 400px;
+		width: 80%;
+		margin: 50px auto;
+		padding: 10px;
+		margin-bottom: 10px;
+        height: 90px;
+    }
+
+    #logoImg {
+        height: 75px;
+        /* height: 12vh; */
+        width: 120px;
+    }
+
+    #scoreCard {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 12px;
+		padding-bottom: 10px;
+		font-size: 10px;
+		letter-spacing: 2px;
+		font-weight: 700;
+		width: 80px;
+    }
+
+    #score {
+		font-size: 35px;
+	}
+
+    #option-holder {
+        margin-top: 65px;
+		height: 250px;
+		width: 280px;
+		background-size: 80% 80%;
+    }
+
+    .optionImage{
+        height: 37px;
+    }
+
+    .option {
+        height: 80px;
+		width: 80px;
+    }
+    
+    #paper-holder {
+        border: 19px solid hsl(230, 89%, 62%);
+    }
+    
+    #scissor-holder {
+        border: 19px solid hsl(39, 89%, 49%);
+    }
+    
+    #rock-holder {
+        border: 19px solid hsl(349, 71%, 52%);
+    }
+
+    .selectedImage{
+        height: 45px;
+    }
+
+    #message-container{
+        position: absolute;
+		top: 420px;
+		right: 0;
+		left: 0;
+		width: 150px;
+		margin: 0 auto;
+		font-weight: 500;
+    }
+
+    #playAgain{
+        font-size: 15px;
+    }
+
+    #ruleBanner{
+        text-align: center;
+		position: absolute;
+		height: 20px;
+		width: 80px;
+		top: 550px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 12px 25px;
+		border: 2px solid white;
+		border-radius: 10px;
+		cursor: pointer;
+    }
+
+    .selected{
+        height: 90px;
+		width: 90px;
+		position: relative;
+		margin-top: 20px;
+    }
+
+    .picked {
+        letter-spacing: 1px;
+		font-size: 15px;
+        margin: 25px auto;
+    }
+
+    #result{
+        max-width: 500px;
+		justify-content: space-around;
+    }
+
+    .modalContent{
+        width:100%;
+        height:100%;
+	}
+
+    .ruletop{
+        position: absolute;
+		height: 20px;
+		width: 80px;
+        /* If we dont assign height and width the absolute positioning doesnt work */
+		top: 50px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+        font-size: larger;
+    }
+
+    .closeImg{
+        position: absolute;
+		height: 20px;
+		width: 20px;
+        /* If we dont assign height and width the absolute positioning doesnt work */
+		/* top: 550px; */
+        bottom: 50px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+        /* background-color: black; */
+    }
+}
+
+
+
+
+
+
+
+
